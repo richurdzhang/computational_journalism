@@ -1,0 +1,72 @@
+### AP Text Analysis
+
+#### LSI Results and Topics
+
+Topic 1: (0.131*"percent" + 0.110*"bush" + 0.101*"soviet" + 0.088*"million" + 0.082*"police" + 0.079*"us" + 0.078*"will" + 0.078*"billion" + 0.078*"government" + 0.073*"dukakis")
+This seems to be about the race between Bush the first and Dukakis for Ronald Reagan's replacement. This was during the end of the cold war, and so "soviet" is naturally a word that would be within the topic.  
+
+Topic 2: (0.226*"dollar" + 0.223*"yen" + 0.221*"stock" + 0.206*"index" + 0.168*"market" + 0.166*"points" + 0.147*"trading" + 0.145*"exchange" + 0.140*"prices" + 0.139*"rose")  
+Topic is pretty obviously about how well the market is doing between the US and Chinese markets.  
+
+Topic 3: (-0.346*"yen" + -0.346*"dollar" + 0.188*"percent" + -0.176*"gold" + -0.170*"ounce" + -0.169*"bid" + -0.160*"late" + 0.154*"index" + -0.146*"london" + -0.140*"francs")  
+Topic seems the topic completely removed from to how different currencies (yen, dollar, francs, gold) are faring in the markets, as they all are represented by negative vectors.  
+
+
+Topic 4: (-0.372*"dukakis" + -0.342*"bush" + 0.226*"police" + -0.130*"jackson" + -0.118*"campaign" + -0.112*"soviet" + -0.095*"budget" + -0.093*"democratic" + -0.090*"reagan" + 0.089*"fire")
+Topic is focused on police and fires, and is opposite of a version topic 1 that is focused on domestic issues, as seen by the negative vectors. Dukakis ran against Jackson for the democratic seat, which is completely removed from the positive police and fire vectors.   
+
+Topic 5: (4, '0.392*"soviet" + -0.255*"dukakis" + 0.210*"gorbachev" + -0.131*"dollar" + -0.124*"yen" + -0.099*"jackson" + 0.094*"index" + 0.093*"union" + 0.090*"soviets" + 0.090*"moscow"')
+Topic is about happenings in Gorbachev's Soviet Union, and is far removed from all domestic farings such as the Democratic race between Dukakis and Jackson, and also is unrelated to American-Chinese markets (yen, dollar).
+
+  Topic 6:(-0.236*"percent" + 0.227*"dukakis" + 0.218*"stock" + 0.208*"points" + -0.205*"cents" + -0.177*"billion" + 0.176*"index" + -0.174*"cent" + 0.125*"exchange" + 0.118*"shares")
+  Topic is focused on the stock exchange, and minorly about how it's been affeced by Dukakis. Market sold off before election, a rare occurrence, so the mention of Dukakis is fair.
+
+
+Topic 7:(0.375*"cents" + 0.365*"cent" + 0.268*"futures" + 0.201*"dukakis" + 0.170*"bushel" + -0.167*"percent" + 0.166*"lower" + 0.159*"oil" + -0.131*"billion" + 0.115*"crude")
+Topic is heavily focused on markets and oil (bushel, oil, crude, future, cent) and some impact that Dukakis has had on it or that he was tangentially relevant. Market sold off before election, a rare occurrence, as stated above.
+
+  Topic 8:(-0.293*"percent" + 0.165*"court" + 0.156*"soviet" + 0.142*"cent" + 0.126*"cents" + 0.124*"futures" + -0.119*"iraq" + 0.115*"gorbachev" + -0.108*"dukakis" + -0.105*"police")
+  Topic is focused on sanctions on the Soviets, or similar, as it involves economic terms (cent, cents), "court," and soviet based words.
+
+Topic 9:(-0.252*"iraq" + 0.247*"soviet" + 0.244*"percent" + -0.183*"iraqi" + 0.175*"gorbachev" + -0.166*"kuwait" + 0.158*"party" + -0.129*"saudi" + 0.114*"dukakis" + -0.108*"saddam")
+This topic is about Soviet happenings (soviet, gorbachev) in relation to American politics (dukakis, party), which were removed from conflicts in the Middle East (kuwait, iraq, saddam). However, Kuwait was a conduit for the Soviets in the cold war, so there may be more nuance to this topic.
+
+Topic 10:(0.208*"soviet" + -0.152*"police" + -0.142*"party" + -0.136*"africa" + -0.134*"percent" + -0.129*"government" + 0.120*"air" + -0.113*"south" + -0.113*"african" + -0.108*"mandela")
+Topic is about Soviets that is completely removed from the push against the Apartheid in South Africa.
+
+#### LDA Results and Topics
+
+Topic 50: (0.006*"82" + 0.006*"imf" + 0.005*"attack" + 0.005*"salvadoran" + 0.005*"heath" + 0.004*"police" + 0.004*"kahane" + 0.004*"f117a" + 0.004*"law" + 0.004*"countries")  
+This topic is vaguely about Meir Kahane, who was a politician and considered by some to be a domestic terrorist. Seems completely unrelated to Salvador and the International Monetary Fund, which seem to be related together on their own. Overall a difficult to categorize topic.
+
+Topic 45: (0.014*"maung" + 0.007*"hoffman" + 0.006*"regis" + 0.006*"burial" + 0.006*"squad" + 0.006*"horton" + 0.005*"genealogical" + 0.004*"ne" + 0.003*"sentenced" + 0.003*"males")  
+Topic seems to be related to male (males) deaths (burial) and punishment (squad, sentenced). Extremely vague, and the proper names are hard to place.
+
+Topic 37: (0.010*"disease" + 0.009*"immune" + 0.009*"aids" + 0.007*"genes" + 0.006*"load" + 0.006*"sharing" + 0.006*"davies" + 0.006*"electric" + 0.005*"spread" + 0.005*"sexual")  
+Topic is about sexually transmitted diseases, and specifically aids.
+
+Topic 17: (0.005*"macmillan" + 0.004*"rates" + 0.004*"late" + 0.004*"mohawk" + 0.004*"dollar" + 0.004*"calif" + 0.004*"leonard" + 0.003*"plane" + 0.003*"dollars" + 0.003*"friday")  
+Topic has to do with the rates and prices of Mohawk Airlines (plane, mohawk, dollar, calif, rates). Again, the proper names are hard to place.
+
+
+ Topic 40: (0.008*"hunthausen" + 0.006*"arrested" + 0.006*"tiananmen" + 0.005*"normal" + 0.005*"miss" + 0.005*"prison" + 0.005*"carlucci" + 0.005*"engine" + 0.004*"thorn" + 0.004*"hunthausens")  
+ A very specific topic that has to do with the massacre at Tiananmen square (arrested, tiananmen, prison), which Archbishop Hunthausen gave a speech about.
+
+Topic 1: (0.018*"apple" + 0.018*"hyundai" + 0.006*"production" + 0.004*"dioxide" + 0.003*"gory" + 0.003*"organizing" + 0.003*"motor" + 0.003*"washed" + 0.003*"forthrightly" + 0.003*"longawaited")  
+Topic regarding new tech and manufacturing advances (apple, hyundai, production, motor. longawaited) and their effects, environmental being one of them (dioxide).
+
+Topic 42: (0.006*"humphreys" + 0.006*"argentina" + 0.005*"humphrey" + 0.005*"coroners" + 0.004*"belmont" + 0.004*"wedding" + 0.004*"gunfire" + 0.004*"permission" + 0.004*"floors" + 0.003*"relatives")  
+Very specific topic regarding a suicide (gunfire) in Trumbull County on Belmont Avenue (belmont), whom Humphrey (humphrey, humphreys) was the name of the coroner. The other words are hard to place, and this seems to be pulled from a very specific set of documents.
+
+Topic 68: (0.011*"savings" + 0.009*"presley" + 0.008*"steinbergs" + 0.007*"horse" + 0.006*"thrilled" + 0.006*"boat" + 0.006*"salvage" + 0.005*"elvis" + 0.005*"hong" + 0.005*"pont")  
+Elvis Presley owned many things, and boats and horses were some of them. I suspect that it had to do with saving his Graceland, which had his horses (horse) and many other possessions. Key words: salvage, horse, savings, boat, elvis presley
+
+Topic 73: (0.008*"williams" + 0.008*"literary" + 0.006*"un" + 0.006*"bargaining" + 0.006*"vaccine" + 0.005*"ershad" + 0.004*"vetoed" + 0.004*"dhaka" + 0.004*"awards" + 0.004*"israel")  
+Topic is related to Dhaka Literary Festival (dhaka, awards, literary), and other tangentially related subjects in Bangladesh, where Dhaka is located (ershad).
+
+Topic 87: (0.013*"pacs" + 0.009*"noriega" + 0.007*"panama" + 0.006*"panamas" + 0.006*"accomplice" + 0.006*"oxford" + 0.004*"moonshine" + 0.004*"delvalle" + 0.004*"streets" + 0.003*"caution")  
+Topic is centered around Manuel Noriega and Panama, and the Panama Canal. DelValle was a Panamanian politician, who attempted to remove Noriega and was exiled for it.
+
+#### Analysis on State of the Union vs AP
+
+For the AP results, the LSI model returned much clearer topics than the LDA topics. The LDA topics were incredibly hard to decipher sometimes, such as topic 68 for instance, where there was a lot of guesswork involved. The State of the Union LDA model produced extremely clear topics, which had little to no guesswork involved and could easily be fitted together. In the LDA results for the AP csv, there were often proper nouns that were hard to fit into the rest of the topic. On the other hand, LSI returned some very opaque topics for the State of the Union addresses, while returning decently comprehendible  topics for the AP csv.
