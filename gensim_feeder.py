@@ -6,8 +6,8 @@ import string
 def tfidf(filename):
     with open(filename, newline='') as csvfile:
         csv.field_size_limit(1000000000)
-        sotu = csv.reader(csvfile, quotechar='"')
-        dictionary = corpora.Dictionary(token(''.join(row)) for row in sotu)
+        csv_filename = csv.reader(csvfile, quotechar='"')
+        dictionary = corpora.Dictionary(token(''.join(row)) for row in csv_filename)
     stoplist = set('a about above after again against all am and any are \
                 arent as at be because been before being below between \
                 both but by cant cannot could couldnt did didnt do does \
@@ -28,30 +28,23 @@ def tfidf(filename):
     once_ids = [tokenid for tokenid, docfreq in iteritems(dictionary.dfs) if docfreq == 1]
     dictionary.filter_tokens(stop_ids + once_ids)  # remove stop words and words that appear only once
     dictionary.compactify()  # remove gaps in id sequence after words that were removed
-    print(dictionary)
 
     with open(filename, newline='') as csvfile:
         csv.field_size_limit(1000000000)
-        sotu = csv.reader(csvfile, quotechar='"')
-        corpus = [dictionary.doc2bow(token(''.join(row))) for row in sotu]
-
-    #for vector in corpus:
-    #    print(vector)
+        csv_filename = csv.reader(csvfile, quotechar='"')
+        corpus = [dictionary.doc2bow(token(''.join(row))) for row in csv_filename]
 
     tfidf = models.TfidfModel(corpus)
-    print(tfidf)
 
-    lsi = models.LsiModel(tfidf[corpus], id2word=dictionary, num_topics=300)
+    lsi = models.LsiModel(tfidf[corpus], id2word=dictionary, num_topics=100)
     for topic in lsi.show_topics(num_topics=10):
         print(topic)
         print()
-    print(lsi.show_topic(10, topn=5))
 
-    lda = models.LdaModel(tfidf[corpus], id2word=dictionary, num_topics=100)
+    lda = models.LdaModel(tfidf[corpus], id2word=dictionary, num_topics=400)
     for topic in lda.show_topics(num_topics=10):
         print(topic)
         print()
-    print(lda.show_topic(10, topn=5))
 
 def main():
     tfidf('state-of-the-union.csv')
