@@ -1,0 +1,79 @@
+### State of the Union Text Analysis
+
+#### LSI Results and Topics
+
+Topic 1: (0.072*"upon" + 0.067*"tonight" + 0.057*"program" + 0.057*"economic" + 0.057*"mexico" + 0.053*"treaty" + 0.052*"help" + 0.051*"americans" + 0.051*"budget" + 0.050*"subject")  
+This topic seems to be about a treaties with Mexico and its economic impact. It's quite vague.
+
+Topic 2: ('0.199*"tonight" + 0.130*"jobs" + 0.127*"americans" + 0.121*"help" + 0.118*"budget" + 0.110*"programs" + 0.108*"program" + 0.099*"billion" + 0.098*"economic" + 0.091*"percent")
+Topic is about the economy in a very broad sense, and contains many economics based terms.
+
+Topic 3: (0.197*"tonight" + -0.098*"program" + -0.094*"economic" + 0.093*"jobs" + 0.086*"iraq" + 0.084*"americans" + 0.083*"terrorists" + -0.082*"interstate" + 0.081*"lets" + -0.075*"farm")
+Topic is about the relationship between American jobs and fighting terrorists in Iraq. Removed from domestic accounts, as seen for negative values for domestic related words.
+
+
+Topic 4: (-0.133*"program" + 0.126*"tonight" + 0.111*"silver" + -0.104*"economic" + -0.096*"communist" + -0.095*"soviet" + 0.087*"cent" + 0.087*"gold" + -0.081*"programs" + 0.078*"iraq")
+Topic is related to effect that Iraq has on the value of precious metals? Iraq seems to be out of place in relation to the precious metals listed.
+
+Topic 5: (4, '0.134*"interstate" + -0.125*"silver" + -0.116*"gold" + -0.107*"soviet" + -0.101*"programs" + 0.098*"iraq" + 0.097*"terrorists" + -0.091*"mexico" + -0.085*"notes" + 0.083*"gentlemen"')
+This topic is difficult to comprehend, as it has negative values for many unrelated things and has positive values for many seemingly unrelated things as well, such as interstate and terrorists.  
+
+Topic 6: (0.237*"terrorists" + 0.236*"iraq" + 0.164*"iraqi" + 0.145*"terror" + 0.133*"terrorist" + 0.122*"al" + 0.107*"afghanistan" + 0.093*"iraqis" + 0.088*"fighting" + 0.084*"enemies")
+This topic is definitely about fighting terrorism in Iraq and Afghanistan.
+
+  Topic 7:(6, '-0.172*"mexico" + -0.163*"texas" + -0.092*"paper" + -0.088*"kansas" + 0.082*"spain" + -0.081*"constitution" + -0.078*"bank" + -0.078*"specie" + -0.077*"california" + 0.076*"gentlemen"')
+  This topic relates to Spain, and is removed from documents pertaining to all the negatively valued words. This makes sense, as Spain as a topic should hardly involve Kansas, paper, or California.
+
+
+Topic 8:(-0.149*"iraq" + -0.130*"terrorists" + -0.120*"banks" + -0.111*"veterans" + 0.110*"vietnam" + 0.104*"soviet" + -0.096*"iraqi" + -0.095*"1928" + 0.081*"japanese" + -0.079*"bank")
+Topic is focused on intra Soviet-Japanese-US relations, and is far removed from the other words, which pertain to other foreign relations that are irrelevant to the relationship between the US, Japan, and the Soviet Union relationship.
+
+Topic 9:(0.167*"silver" + 0.144*"gold" + 0.132*"notes" + -0.117*"mexico" + 0.092*"circulation" + 0.087*"currency" + 0.087*"gentlemen" + 0.086*"coinage" + 0.084*"militia" + -0.078*"panama")
+Topic is focused on paper and coin currency being based on gold and silver. Could relate to the Gold Standard and bimetalism as the foundation for the worth of American currency.
+
+Topic 10:(0.155*"vietnam" + -0.118*"1942" + 0.094*"soviet" + 0.085*"oil" + 0.084*"programs" + -0.080*"spain" + -0.080*"japanese" + 0.075*"gentlemen" + 0.074*"interstate" + -0.074*"democracy")
+Probably has to do with the Cold War and the Vietnam War, which were removed from Japanese and Spanish relationships, but had to do with Vietnam and the Soviets. Unclear how "interstate" fits into the picture.
+
+#### LDA Results and Topics
+
+Topic 56:[texas, oregon, mexico, 1843, 1842, 1844, annexation, mexican, plenipotentiary, compromise]    
+Topic is about the amassing of new territories for the United States in those respective years.
+
+Topic 69:[terrorists, terror, iraq, afghanistan, terrorist, jobs, regimes, tonight, homeland, workers]  
+Topic is about the war against terrorism and its domestic effects.
+
+
+Topic 29:[1947, 1892, 1945, 1946, reconversion, dollars, 1891, million, authorizations, program]  
+This topic is about periods of reconversion after WWII. 1892 and 1891 do not make a lot of sense, but maybe had many programs / authorizations during that time period.
+
+
+Topic 21:[1898, dictators, santiago, cuba, 1897, 1886, spanish, puerto, materiel, seventyseventh]  
+Topic is the Spanish-American war.
+
+
+Topic 7:[hussein, saddam, tonight, terrorists, americans, weapons, terror, terrorist, inspectors, iraq]  
+Topic is the War against terror, specifically against Saddam Hussein's Iraq.
+
+
+Topic 58:[emancipation, nitrogen, colored, cable, slavery, consolidations, tonight, economic, method, jobs]  
+Topic is emancipation of slaves in 1862 and its effects.
+
+
+Topic 43:[vietnam, tonight, 1899, 1897, gold, cuba, belligerency, cuban, 1966, spain]  
+This topic does not make much sense. It probably has to do with times of military prowress around the world.
+
+
+Topic 44:[nurses, 1944, league, japanese, court, germans, 1925, judges, air, german]  
+Topic consists of WWII (japanese, 1944, germans) and relevant facts, such as the banning of Japanese battleships in 1925 by the Washington Treaty.
+
+
+Topic 10:[german, notes, paper, masters, prussian, austriahungary, autocracy, mexico, gun, parental]  
+Topic has to do with Second Mexican Empire, when European countries listed tried to instate European, monarchial system when Austrian Ferdinand Maximillan had power there.
+
+
+Topic 19:[gentlemen, nominees, counsel, damages, commissioners, debatable, 1797, processes, captures, affections]  
+Topic is probably the happenings of America in 1797.
+
+#### LSI vs LDA
+
+It seemed that LDA gave more holistic, easier to understand topics. There was a greater variety of topics in the LDA sample than the LSI sample, and negative vectors returned by LSI analysis were difficult to analyze in comparison to the very clear cut word base of the LDA topics. 
