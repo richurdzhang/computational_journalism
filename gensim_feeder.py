@@ -41,7 +41,7 @@ def tfidf(filename):
         print(topic)
         print()
 
-    lda = models.LdaModel(tfidf[corpus], id2word=dictionary, num_topics=400)
+    lda = models.LdaModel(tfidf[corpus], id2word=dictionary, num_topics=100)
     for topic in lda.show_topics(num_topics=10):
         print(topic)
         print()
